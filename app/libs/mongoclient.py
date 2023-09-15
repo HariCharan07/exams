@@ -1,0 +1,28 @@
+from fastapi import FastAPI
+import pymongo
+
+client = pymongo.MongoClient("mongodb://localhost:27017/")
+mongoDBClient = client["Think75"]
+user_collection=mongoDBClient["user_collection"]
+newQuestion_collection=mongoDBClient["newQuestion_collection"]
+tenant_collection=mongoDBClient["tenantcollection"]
+question_collection = mongoDBClient["question_collection"]
+newQuestion_collection = mongoDBClient["newQuestion_collection"]
+newQuestion_admin_collection = mongoDBClient["newQuestion_admin_collection"]
+examProgressCollection = mongoDBClient["examProgress"]
+candidateCollection = mongoDBClient["candidateCollection"]
+examSubmissionCollection = mongoDBClient["examSubmission"]
+assessment_collection = mongoDBClient["assessment_collection"]
+UploadAssessmentExcel = mongoDBClient["UploadAssessmentExcel"]
+uploadvideo = mongoDBClient["uploadvideo"]
+examReportCollection = mongoDBClient["examReportCollelction"]
+user_task_collection = mongoDBClient["user_task_collection"]
+batch_collection = mongoDBClient["batch_collection"]
+mailedcandidateCollection = mongoDBClient["mailedcandidateCollection"]
+candidateSignupCollection = mongoDBClient["candidateSignupCollection"]
+sectionCollection = mongoDBClient["sectionCollection"]
+sectionTenantCollection = mongoDBClient["sectionTenCollection"]
+EmailTemplateCollection=mongoDBClient["EmailTemplateCollection"]
+workspaces_collection=mongoDBClient["WorkspaceCollection"]
+tenant_collection=mongoDBClient["tenantcollection"]
+collection=mongoDBClient["collection"]
